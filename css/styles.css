@@ -12,6 +12,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --footer-adress-color: rgba(255, 255, 255, 0.6);
+  --base-margin: 30px;
 }
 
 /* Стили для index */
@@ -24,13 +25,25 @@ body {
   line-height: 1.71;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 /* шапка */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .accent {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -59,6 +72,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 50;
 }
 
 .auth-nav .link {
@@ -68,6 +84,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 50;
 }
 
 .site-nav .link:hover,
@@ -84,14 +103,17 @@ body {
   color: var(--accent-color);
 }
 
-.works {
+/* Hero */
+
+.hero-works {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Hero */
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
   color: var(--primary-white-color);
   letter-spacing: 0.06em;
   font-weight: 900;
@@ -99,16 +121,40 @@ body {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: var(--base-margin);
 }
 
 /* Section */
+
+.section {
+  padding: 94px 0;
+}
+
+.section .examples {
+  padding: 94px 0;
+}
+
+.leaders {
+  padding: 0 auto;
+}
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  width: 376px;
+  margin: 0 auto;
+  margin-bottom: 50;
+}
+
+.section-title.leaders {
+  width: 264px;
+  margin: 0 auto;
+  margin-bottom: 50;
 }
 
 .section-partition {
@@ -116,12 +162,15 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .section .text {
   letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 /* Features */
 .feature-list .title {
@@ -129,6 +178,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 
 .feature-list {
@@ -143,6 +193,7 @@ body {
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
+  display: inline-block;
 }
 
 .button.primary {
@@ -153,19 +204,23 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  min-width: 200px;
+  height: 50px;
   border-radius: 4px;
-  padding: 10px 32px;
-  text-align: center;
+  margin: 0 auto;
 }
 
 /* Footer */
 
 .footer-works {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-local {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer-works .logo {
@@ -183,6 +238,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  margin-top: 9px;
 }
 
 .footer-local .link.actual {
@@ -199,7 +255,7 @@ body {
 }
 
 /* Стили для портфолио */
-.button.secondary {
+.button-secondary {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
@@ -207,6 +263,36 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+}
+
+.button-secondary.oll {
+  width: 73px;
+  height: 38px;
+  padding-bottom: 56px;
+}
+
+.button-secondary.web {
+  width: 84px;
+  height: 26px;
+  padding-bottom: 50px;
+}
+
+.button-secondary.app {
+  width: 101px;
+  height: 26px;
+  padding-bottom: 50px;
+}
+
+.button-secondary.des {
+  width: 59px;
+  height: 26px;
+  padding-bottom: 50px;
+}
+
+.button-secondary.mark {
+  width: 86px;
+  height: 26px;
+  padding-bottom: 50px;
 }
 
 /* Filter */
@@ -233,10 +319,13 @@ body {
   line-height: 1.87;
 }
 
-/* -----------контейнер----------- */
+.filter {
+  padding-top: 94px;
+  padding-bottom: 114px;
+}
 
-.container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+.filter-list .title {
+  width: 322px;
+  height: 36px;
+  margin-bottom: 4px;
 }
