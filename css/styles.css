@@ -62,6 +62,9 @@ body {
 
 .logo-href {
   text-decoration: none;
+  width: 145px;
+  height: 31px;
+  margin-right: 93px;
 }
 
 /* site nav */
@@ -74,7 +77,6 @@ body {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin: 50;
 }
 
 .auth-nav .link {
@@ -86,7 +88,6 @@ body {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin: 50;
 }
 
 .site-nav .link:hover,
@@ -136,10 +137,6 @@ body {
   padding: 94px 0;
 }
 
-.leaders {
-  padding: 0 auto;
-}
-
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -148,13 +145,13 @@ body {
   text-align: center;
   width: 376px;
   margin: 0 auto;
-  margin-bottom: 50;
+  margin-bottom: 50px;
 }
 
 .section-title.leaders {
   width: 264px;
   margin: 0 auto;
-  margin-bottom: 50;
+  margin-bottom: 50px;
 }
 
 .section-partition {
@@ -163,7 +160,16 @@ body {
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 10px;
+  margin-top: 30px;
   text-align: center;
+}
+
+.feature-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  width: 270px;
+  color: var(--primary-text-color);
 }
 
 .section .text {
@@ -178,7 +184,12 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  width: 270px;
   margin-bottom: 10px;
+}
+
+.feature-item:not(:last-child) {
+  margin-right: var(--base-margin);
 }
 
 .feature-list {
@@ -214,13 +225,16 @@ body {
 
 .footer-works {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-local {
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-works .logo {
@@ -238,7 +252,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
-  margin-top: 9px;
 }
 
 .footer-local .link.actual {
@@ -257,7 +270,7 @@ body {
 /* Стили для портфолио */
 .button-secondary {
   color: var(--title-text-color);
-  background-color: var(--primary-white-color);
+  background-color: #f5f4fa;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-weight: 500;
@@ -268,31 +281,26 @@ body {
 .button-secondary.oll {
   width: 73px;
   height: 38px;
-  padding-bottom: 56px;
 }
 
 .button-secondary.web {
-  width: 84px;
-  height: 26px;
-  padding-bottom: 50px;
+  width: 128px;
+  height: 38px;
 }
 
 .button-secondary.app {
-  width: 101px;
-  height: 26px;
-  padding-bottom: 50px;
+  width: 145px;
+  height: 38px;
 }
 
 .button-secondary.des {
-  width: 59px;
-  height: 26px;
-  padding-bottom: 50px;
+  width: 103px;
+  height: 38px;
 }
 
 .button-secondary.mark {
-  width: 86px;
-  height: 26px;
-  padding-bottom: 50px;
+  width: 130px;
+  height: 38px;
 }
 
 /* Filter */
@@ -300,8 +308,53 @@ body {
   color: var(--primary-white-color);
 }
 
+.btn {
+  margin-bottom: 50px;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+
 .filter-list {
   list-style: none;
+}
+
+.filter-button.list {
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-button {
+  display: flex;
+}
+
+.filter-list.option {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.filter-selection {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* .filter-selection:not(:nth-child(3n)) {
+  margin-right: var(--base-margin);
+}
+
+.filter-selection:not(:nth-last-child(-n + 3)) {
+  margin-bottom: var(--base-margin);
+} */
+
+.filter-item {
+  /* margin: 0 auto; */
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-list .title {
@@ -310,6 +363,9 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  width: 322px;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .filter-list .text {
@@ -317,6 +373,7 @@ body {
   letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.87;
+  width: 322px;
 }
 
 .filter {
@@ -324,8 +381,49 @@ body {
   padding-bottom: 114px;
 }
 
-.filter-list .title {
-  width: 322px;
-  height: 36px;
-  margin-bottom: 4px;
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.telephone {
+  margin-left: 50px;
+}
+
+.feature-list {
+  display: flex;
+}
+
+.examples-list {
+  display: flex;
+}
+
+.examples-item:not(:last-child) {
+  margin-right: var(--base-margin);
+}
+
+.leaders-list {
+  display: flex;
+}
+
+.leaders-item:not(:last-child) {
+  margin-right: var(--base-margin);
 }
