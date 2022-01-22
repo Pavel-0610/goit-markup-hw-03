@@ -29,7 +29,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .list {
@@ -41,6 +41,12 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+.header-line {
+  width: 1600px;
+  height: 0px;
+  border: 1px solid #ececec;
 }
 
 .accent {
@@ -74,8 +80,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .auth-nav .link {
@@ -85,8 +89,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -132,8 +134,12 @@ body {
   padding: 94px 0;
 }
 
-.section .examples {
-  padding: 94px 0;
+.section-leaders {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-examples {
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -147,7 +153,7 @@ body {
   margin-bottom: 50px;
 }
 
-.section-title.leaders {
+.section-title-leaders {
   width: 264px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -159,8 +165,12 @@ body {
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 10px;
-  margin-top: 30px;
   text-align: center;
+}
+
+.people {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .feature-text {
@@ -171,7 +181,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.section .text {
+.section-leaders .text {
   letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.18;
@@ -224,12 +234,14 @@ body {
 
 .footer-works {
   background-color: #2f303a;
+  padding: 60px 60px;
+  /* padding-bottom: 60px; */
 }
 
 .footer-local {
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .footer-item:not(:last-child) {
@@ -304,7 +316,23 @@ body {
 
 /* Filter */
 .filter-part {
-  color: var(--primary-white-color);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter-banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 370px;
+  border: 1px solid #eeeeee;
 }
 
 .btn {
@@ -363,7 +391,6 @@ body {
   font-size: 18px;
   line-height: 2;
   width: 322px;
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 
